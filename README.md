@@ -16,6 +16,6 @@ Use to analyze data from RX and TX to keyboard from Napco 1632 panel. I used Ard
 
                         9K               3.1K
     KEYPAD YELLOW ---/\/\/\/\----.----/\/\/\/\------ ARDUINO GROUND PIN 
-                                |
-                                |
-                       ARDUINO PIN 13 -> RX
+                                 |
+                                 |
+                        ARDUINO PIN 13 -> RX
