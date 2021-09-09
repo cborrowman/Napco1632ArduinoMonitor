@@ -6,7 +6,7 @@ Use to analyze data from RX and TX to keyboard from Napco 1632 panel. I used Ard
 Monitoring data received by keypad:
 
                   1K               300 ohm
-KEYPAD GREEN ---/\/\/\/\----.----/\/\/\/\------ ARDUINO GROUND PIN 
+KEYPAD GREEN ---/\\/\\/\\/\\----.----/\\/\\/\\/\\------ ARDUINO GROUND PIN 
                             |
                             |
                    ARDUINO PIN 13 -> RX
@@ -15,7 +15,7 @@ KEYPAD GREEN ---/\/\/\/\----.----/\/\/\/\------ ARDUINO GROUND PIN
 Monitoring data sent from keypad:
 
                     9K               3.1K
-KEYPAD YELLOW ---/\/\/\/\----.----/\/\/\/\------ ARDUINO GROUND PIN 
+KEYPAD YELLOW ---/\\/\\/\\/\\----.----/\\/\\/\\/\\------ ARDUINO GROUND PIN 
                             |
                             |
                    ARDUINO PIN 13 -> RX
