@@ -1,0 +1,1276 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:.5in .3in .5in .5in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>RX to
+panel – ARM – 7767 – DISARM – RESET – zone fault</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:33.105
+-&gt; <span style='background:lime'>21 4E 00 00 01 01 40 00 80 80 00 00 00 B1</span>
+<span style='background:aqua'>21 85    !N....@.......!.</span></span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:aqua'>10:22:33.310 -&gt; 00 00 A6 21 85 00 00 A6 21 85 00 00 A6</span><span
+style='font-size:10.5pt;font-family:Consolas'> <span style='background:yellow'>31
+3B 00    ...!....!....1;.</span></span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:33.343 -&gt; 04 00 00 00 00 00 00 17 06 00 00 00 00 00
+00 00    ................</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:33.411 -&gt; 00 00 00 00 00 00 00 74 31 3B 00 00 01 20
+00 00    .......t1;... ..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:33.445 -&gt; 02 00 53 59 53 54 45 4D 20 52 45 41 44 59
+20 20    ..SYSTEM READY  </span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:33.547 -&gt; 20 20 89 31 3B 00 00 01 60 00 00 02 00 20
+20 20      .1;...`....   </span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:33.621 -&gt; 20 20 20 20 20 20 20 20 20 20 20 20 20 CF</span><span
+style='font-size:10.5pt;font-family:Consolas'> 31 31                 .11</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:33.726
+-&gt; 00 00 01 20 02 00 01 00 52 45 41 44 59 20 1B 31    ... ....READY .1</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:33.761
+-&gt; 31 00 00 01 60 02 00 01 00 20 20 20 20 20 20 86    1...`....      .</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:33.831
+-&gt; 31 31 00 00 00 E0 00 00 00 00 00 00 00 00 00 02    11..............</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:34.013
+-&gt; BB 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 <span style='background:
+yellow'>31    .!N....@.......1</span></span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:34.047 -&gt; 3B 00 04 00 00 00 00 00 00 17 06 00 00 00
+00 00    ;...............</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:34.120 -&gt; 00 00 00 00 00 00 00 00 00 74 31 3B 00 00
+01 20    .........t1;... </span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:34.157 -&gt; 00 00 02 00 53 59 53 54 45 4D 20 52 45 41
+44 59    ....SYSTEM READY</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:34.226 -&gt; 20 20 20 20 89 31 3B 00 00 01 60 00 00 02
+00 20        .1;...`.... </span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:34.260 -&gt; 20 20 20 20 20 20 20 20 20 20 20 20 20 20
+20</span><span style='font-size:10.5pt;font-family:Consolas'> CF                  
+.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:34.364
+-&gt; 31 31 00 00 01 20 02 00 01 00 52 45 41 44 59 20    11... ....READY </span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:34.466
+-&gt; 1B 31 31 00 00 01 60 02 00 01 00 20 20 20 20 20    .11...`....     </span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:34.533
+-&gt; 20 86 31 31 00 00 00 E0 00 00 00 00 00 00 00 00     .11............</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:34.668
+-&gt; 00 02 BB <span style='background:lime'>21 4E 00 00 01 01 40 00 80 80 00
+00 00    ...!N....@......</span></span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:34.837 -&gt; B1 21 4E 00 00 01 01 40 00 80 80 00 00 00
+B1 21    .!N....@.......!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:34.939 -&gt; 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21
+4E 00    N....@.......!N.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:35.075 -&gt; 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00
+00 01    ...@.......!N...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:35.181 -&gt; 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01
+01 40    .@.......!N....@</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:35.284 -&gt; 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40
+00 80    .......!N....@..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:35.394 -&gt; 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80
+80 00    .....!N....@....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:35.564 -&gt; 00 00 B1 </span><span style='font-size:
+10.5pt;font-family:Consolas;background:fuchsia'>21 C5 00 00 E6</span><span
+style='font-size:10.5pt;font-family:Consolas'> <span style='background:lime'>21
+4E 00 00 01 01 40 00    ...!....!N....@.</span></span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:35.633 -&gt; 80 80 00 01 00 B2</span><span
+style='font-size:10.5pt;font-family:Consolas'> <span style='background:yellow'>31
+3B 00 04 00 00 00 00 00 00    ......1;........</span></span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:35.666 -&gt; 1F 1D 3C 00 20 00 00 10 00 00 00 00 00 00
+00 00    ..&lt;. ...........</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:35.767 -&gt; E9 31 3B 00 00 01 20 00 00 81 80 20 50 4C
+45 41    .1;... .... PLEA</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:35.870 -&gt; 53 45 20 45 58 49 54 20 49 4E 20 99 31 3B
+00 00    SE EXIT IN .1;..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:35.904 -&gt; 01 60 00 00 81 80 20 20 20 20 36 30 20 53
+45 43    .`....    60 SEC</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:36.009 -&gt; 4F 4E 44 53 20 20 23</span><span
+style='font-size:10.5pt;font-family:Consolas'> 31 31 00 00 01 22 81 80 01   
+ONDS  #11...&quot;...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:36.081
+-&gt; 00 20 36 30 53 45 43 E8 31 31 00 00 01 62 81 80    . 60SEC.11...b..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:36.183
+-&gt; 01 00 20 45 58 49 54 20 41 31 31 00 00 00 E0 00    .. EXIT A11.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:36.286
+-&gt; 00 00 00 00 10 00 00 00 82 2B <span style='background:lime'>21 4E 00 00
+01 01    .........+!N....</span></span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:36.426 -&gt; 40 00 80 80 00 01 00 B2 21 4E 00 00 01 01
+40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:36.531 -&gt; 80 80 00 01 00 B2 21 4E 00 00 01 01 40 00
+80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:36.635 -&gt; 00 01 00 B2 21 4E 00 00 01 01 40 00 80 80
+00 01    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:36.737 -&gt; 00 B2 21 4E 00 00 01 01 40 00 80 80 00 01
+00 B2    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:36.907 -&gt; 21 4E 00 00 01 01 40 00 80 80 00 01 00 B2
+21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:37.007 -&gt; 00 00 01 01 40 00 80 80 00 01 00 B2 21 4E
+00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:37.177 -&gt; 01 01 40 00 80 80 00 01 00 B2 21 4E 00 00
+01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:37.281 -&gt; 40 00 80 80 00 01 00 B2 21 4E 00 00 01 01
+40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:37.417 -&gt; 80 80 00 01 00 B2 21 4E 00 00 01 01 40 00
+80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:37.519 -&gt; 00 01 00 B2 21 4E 00 00 01 01 40 00 80 80
+00 01    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:37.623 -&gt; 00 B2 21 4E 00 00 01 01 40 00 80 80 00 01
+00 B2    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:37.828 -&gt; 21 4E 00 00 01 01 40 00 80 80 00 01 00 B2
+21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:37.931 -&gt; 00 00 01 01 40 00 80 80 00 01 00 B2 21 4E
+00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:38.033 -&gt; 01 01 40 00 80 80 00 01 00 B2 21 4E 00 00
+01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:38.173 -&gt; 40 00 80 80 00 01 00 B2 21 4E 00 00 01 01
+40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:38.275 -&gt; 80 80 00 01 00 B2 21 4E 00 00 01 01 40 00
+80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:38.379 -&gt; 00 01 00 B2 21 4E 00 00 01 01 40 00 80 80
+00 01    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:38.481 -&gt; 00 B2 21 4E 00 00 01 01 40 00 80 80 00 01
+00 B2    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:38.655 -&gt; 21 4E 00 00 01 01 40 00 80 80 00 01 00 B2
+21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:38.760 -&gt; 00 00 01 01 40 00 80 80 00 01 00 B2 21 4E
+00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:38.866 -&gt; 01 01 40 00 80 80 00 01 00 B2 21 4E 00 00
+01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:38.970 -&gt; 40 00 80 80 00 01 00 B2 21 4E 00 00 01 01
+40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:39.110 -&gt; 80 80 00 01 00 B2 21 4E 00 00 01 01 40 00
+80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:39.253 -&gt; 00 01 00 B2 </span><span style='font-size:
+10.5pt;font-family:Consolas;background:fuchsia'>21 C5 00 00 E6 </span><span
+style='font-size:10.5pt;font-family:Consolas;background:lime'>21 4E 00 00 01 01
+40    ....!....!N....@</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:39.357 -&gt; 00 80 80 00 00 00 B1</span><span
+style='font-size:10.5pt;font-family:Consolas'> <span style='background:yellow'>31
+3B 00 04 00 00 00 00 00    .......1;.......</span></span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:39.395 -&gt; 00 17 06 00 00 00 00 00 00 00 00 00 00 00
+00 00    ................</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:39.498 -&gt; 00 74 31 3B 00 00 01 20 00 00 02 00 53 59
+53 54    .t1;... ....SYST</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:39.568 -&gt; 45 4D 20 52 45 41 44 59 20 20 20 20 89 31
+3B 00    EM READY    .1;.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:39.602 -&gt; 00 01 60 00 00 02 00 20 20 20 20 20 20 20
+20 20    ..`....         </span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:39.704 -&gt; 20 20 20 20 20 20 20 CF </span><span
+style='font-size:10.5pt;font-family:Consolas'>31 31 00 00 01 20 02 00          
+.11... ..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:39.771
+-&gt; 01 00 52 45 41 44 59 20 1B 31 31 00 00 01 60 02    ..READY .11...`.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:39.878
+-&gt; 00 01 00 20 20 20 20 20 20 86 31 31 00 00 00 E0    ...      .11....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:39.981
+-&gt; 00 00 00 00 00 00 00 00 00 02 BB <span style='background:lime'>21 4E 00
+00 01    ...........!N...</span></span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:40.116 -&gt; 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01
+01 40    .@.......!N....@</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:40.218 -&gt; 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40
+00 80    .......!N....@..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:40.322 -&gt; 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80
+80 00    .....!N....@....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:40.424 -&gt; 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00
+00 00    ...!N....@......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:40.598 -&gt; B1 21 4E 00 00 01 01 40 00 80 80 00 00 00
+B1 21    .!N....@.......!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:40.737 -&gt; 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21
+4E 00    N....@.......!N.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:40.844 -&gt; 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00
+00 01    ...@.......!N...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:40.949 -&gt; 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01
+01 40    .@.......!N....@</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:41.050 -&gt; 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40
+00 80    .......!N....@..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:41.187 -&gt; 80 00 00 00 B1</span><span
+style='font-size:10.5pt;font-family:Consolas'> <span style='background:fuchsia'>21
+C5 00 00 E6</span> <span style='background:yellow'>31 3B 00 04 00 00   
+.....!....1;....</span></span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:41.221 -&gt; 00 00 00 00 17 06 00 00 00 00 00 00 00 00
+00 00    ................</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:41.324 -&gt; 00 00 00 00 74 31 3B 00 00 01 20 00 00 02
+00 53    ....t1;... ....S</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:41.360 -&gt; 59 53 54 45 4D 20 52 45 41 44 59 20 20 20
+20 89    YSTEM READY    .</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:41.430 -&gt; 31 3B 00 00 01 60 00 00 02 00 20 20 20 20
+20 20    1;...`....      </span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:41.532 -&gt; 20 20 20 20 20 20 20 20 20 20 CF</span><span
+style='font-size:10.5pt;font-family:Consolas'> 31 31 00 00 01             
+.11...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:41.634
+-&gt; 20 02 00 01 00 52 45 41 44 59 20 1B 31 31 00 00     ....READY .11..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:41.736
+-&gt; 01 60 02 00 01 00 20 20 20 20 20 20 86 31 31 00    .`....      .11.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:41.839
+-&gt; 00 00 E0 00 00 00 00 00 00 00 00 00 02 BB <span style='background:lime'>21
+4E    ..............!N</span></span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:41.941 -&gt; 00 00 01 31 40 00 80 80 00 00 00 E1 21 4E
+00 00    ...1@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:42.043 -&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00
+01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:42.146 -&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01
+40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:42.283 -&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00
+80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:42.390 -&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80
+00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:42.499 -&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00
+00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:42.705 -&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1
+21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:42.807 -&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E
+00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:42.943 -&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00
+01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:43.044 -&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01
+40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:43.147 -&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00
+80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:43.250 -&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80
+00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:43.392 -&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00
+00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:43.565 -&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1
+21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:43.668 -&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E
+00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:43.772 -&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00
+01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:43.874 -&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01
+40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:44.010 -&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00
+80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:44.111 -&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80
+00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:44.215 -&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00
+00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:44.426 -&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1
+21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:44.530 -&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E
+00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:44.633 -&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00
+01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:44.736 -&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01
+40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:44.838 -&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00
+80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:44.975 -&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80
+00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>10:22:45.077 -&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00
+00 B1</span><span style='font-size:10.5pt;font-family:Consolas'>   
+..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:45.247
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:45.350
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:45.490
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:45.560
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:45.699
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:45.802
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:45.903
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:46.080
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:46.219
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:46.322
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:46.429
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:46.532
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:46.635
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:46.771
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:46.945
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:47.049
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:47.187
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:47.289
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:47.391
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:47.527
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:47.632
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:47.805
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:47.907
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:48.043
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:48.145
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:48.246
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:48.383
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:48.493
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:48.663
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:48.800
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:48.910
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:49.012
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:49.114
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:49.216
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:49.351
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:49.524
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:49.665
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:49.766
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:49.868
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:49.973
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:50.077
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:50.213
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:50.383
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:50.485
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:50.587
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:50.724
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:50.830
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:50.932
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:51.069
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:51.243
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:51.350
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:51.487
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:51.590
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:51.694
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:51.796
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:51.904
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:52.108
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:52.210
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:52.347
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:52.451
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:52.555
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:52.658
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:52.798
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:52.970
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:53.074
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:53.184
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:53.322
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:53.392
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:53.529
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:53.632
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:53.801
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:53.905
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:54.042
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:54.145
+-&gt; 40 00 80 80 00 00 00 B1 <span style='background:yellow'>31 3B 00 04 00 00
+00 00    @.......1;......</span></span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:54.178 -&gt; 00 00 09 06 00 00 00 00 00 00 00 00 00 00
+00 00    ................</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:54.247 -&gt; 00 00 82 31 3B 00 00 01 20 00 00 00 00 20
+5A 4F    ...1;... .... ZO</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:54.354 -&gt; 4E 45 20 46 41 55 4C 54 45 44 20 20 20 6E
+31 3B    NE FAULTED   n1;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:54.391 -&gt; 00 00 01 60 00 00 00 00 20 20 20 20 20 20
+20 20    ...`....        </span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:54.465 -&gt; 20 20 20 20 20 20 20 20 CD</span><span
+style='font-size:10.5pt;font-family:Consolas'> 31 31 00 00 01 23 00           
+.11...#.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:54.533
+-&gt; 00 01 00 46 41 55 4C 54 20 23 31 31 00 00 01 63    ...FAULT #11...c</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:54.636
+-&gt; 00 00 01 00 20 20 20 20 20 20 87 31 31 00 00 00    ....      .11...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:54.743
+-&gt; E0 00 00 00 00 00 00 00 00 00 02 BB 21 4E 00 00    ............!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:54.843
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:54.949
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:55.017
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:55.118
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:55.219
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:55.390
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:55.494
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:55.596
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:55.702
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:55.807
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:55.913
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:55.984
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:56.159
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:56.263
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:56.367
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:56.467
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:56.568
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:56.673
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:56.775
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:56.915
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:57.018
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:57.121
+-&gt; 01 01 40 00 80 80 00 00 00 B1 <span style='background:yellow'>31 3B 00 04
+00 00    ..@.......1;....</span></span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:57.155 -&gt; 00 00 00 00 19 79 00 00 00 00 00 00 00 00
+00 00    .....y..........</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:57.223 -&gt; 00 00 00 00 FF 31 3B 00 00 01 20 00 00 00
+00 30    .....1;... ....0</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:57.256 -&gt; 31 2D 4F 46 46 49 43 45 20 57 44 57 20 20
+20 39    1-OFFICE WDW   9</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:57.359 -&gt; 31 3B 00 00 01 60 00 00 00 00 20 20 20 20
+20 20    1;...`....      </span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:57.459 -&gt; 20 20 20 20 20 20 20 20 20 20 CD</span><span
+style='font-size:10.5pt;font-family:Consolas'> 31 31 00 00 01             
+.11...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:57.528
+-&gt; 20 00 00 01 00 5A 4F 4E 45 30 31 21 31 31 03 01     ....ZONE01!11..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:57.634
+-&gt; 01 60 00 00 01 00 20 20 20 20 20 20 88 31 31 00    .`....      .11.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:57.703
+-&gt; 00 00 E0 00 00 00 00 00 00 00 00 00 02 BB 21 4E    ..............!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:57.806
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:57.907
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:58.010
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:58.112
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:58.216
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:58.321
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:58.457
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:58.562
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:58.664
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:58.736
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:58.839
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:58.941
+-&gt; 00 00 00 B1 <span style='background:yellow'>31 3B 00 04 00 00 00 00 00 00
+17 06    ....1;..........</span></span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:59.044 -&gt; 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+74 31    ..............t1</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:59.078 -&gt; 3B 00 00 01 20 00 00 02 00 53 59 53 54 45
+4D 20    ;... ....SYSTEM </span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:59.145 -&gt; 52 45 41 44 59 20 20 20 20 89 31 3B 00 00
+01 60    READY    .1;...`</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:59.182 -&gt; 00 00 02 00 20 20 20 20 20 20 20 20 20 20
+20 20    ....            </span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:yellow'>10:22:59.284 -&gt; 20 20 20 20 CF</span><span
+style='font-size:10.5pt;font-family:Consolas'> 31 31 00 00 01 20 02 00 01 00
+52        .11... ....R</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:59.388
+-&gt; 45 41 44 59 20 1B 31 31 00 00 01 60 02 00 01 00    EADY .11...`....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:59.493
+-&gt; 20 20 20 20 20 20 86 31 31 00 00 00 E0 00 00 00          .11.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:59.596
+-&gt; 00 00 00 00 00 00 02 BB 21 4E 00 00 01 01 40 00    ........!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:59.701
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:59.804
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:22:59.909
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:00.082
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:00.217
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:00.321
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:00.422
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:00.527
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:00.667
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:00.775
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:00.949
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:01.086
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:01.188
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:01.290
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:01.393
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:01.495
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:01.632
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:01.805
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:01.910
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:02.015
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:02.118
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:02.256
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:02.358
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:02.462
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:02.674
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:02.775
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:02.881
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:03.018
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:03.119
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:03.227
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:03.328
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:03.532
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:03.637
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:03.772
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:03.874
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:03.976
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:04.080
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:04.219
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:04.390
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:04.495
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:04.630
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    ..@.......!N....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:04.732
+-&gt; 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00    @.......!N....@.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:04.866
+-&gt; 80 80 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80    ......!N....@...</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:04.968
+-&gt; 00 00 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00    ....!N....@.....</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:05.072
+-&gt; 00 B1 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1    ..!N....@.......</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:05.244
+-&gt; 21 4E 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E    !N....@.......!N</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:05.347
+-&gt; 00 00 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00    ....@.......!N..</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>10:23:05.454
+-&gt; 01 01 40 00 80 80 00 00 00 B1 21 4E 00 00 01 01    </span><a
+href="mailto:..@.......!N"><span style='font-size:10.5pt;font-family:Consolas'>..@.......!N</span></a><span
+style='font-size:10.5pt;font-family:Consolas'>....</span></p>
+
+<span style='font-size:10.5pt;font-family:Consolas'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>TX from
+pabel – ARM – 7767 – DISARM – RESET – zone fault</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:02.453
+-&gt; <span style='background:yellow'>21 44 20 85</span> 21 44 20 85 21 44 20
+85 21 44 20 85    !D .!D .!D .!D .</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:04.102
+-&gt; <span style='background:yellow'>21 44 21 86</span> <span
+style='background:yellow'>21 44 01 66</span> 21 44 01 66 21 44 01 66   
+!D!.!D.f!D.f!D.f</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:04.512
+-&gt; 21 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66    !D.f!D.f!D.f!D.f</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:04.924
+-&gt; 21 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66    !D.f!D.f!D.f!D.f</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:05.377
+-&gt; 21 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66    !D.f!D.f!D.f!D.f</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:06.413
+-&gt; 21 44 01 66 <span style='background:lime'>21 25 21 80 E7</span> 21 44 01
+66 21 44 01    !D.f!%!..!D.f!D.  80 on/off</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:06.866
+-&gt; 66 21 44 01 66 21 44 01 66 21 44 01 66 21 44 01    f!D.f!D.f!D.f!D.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:07.278
+-&gt; 66 21 44 01 66 21 44 01 66 21 44 01 66 21 44 01    f!D.f!D.f!D.f!D.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:07.691
+-&gt; 66 21 44 01 66 21 44 01 66 21 44 01 66 21 44 01    f!D.f!D.f!D.f!D.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:08.112
+-&gt; 66 21 44 01 66 21 44 01 66 21 44 01 66 21 44 01    f!D.f!D.f!D.f!D.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:08.524
+-&gt; 66 21 44 01 66 21 44 01 66 21 44 01 66 21 44 01    f!D.f!D.f!D.f!D.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:08.974
+-&gt; 66 21 44 01 66 21 44 01 66 21 44 01 66 21 44 01    f!D.f!D.f!D.f!D.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:09.357
+-&gt; 66 21 44 01 66 21 44 01 66 21 44 01 66 21 44 01    f!D.f!D.f!D.f!D.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:09.777
+-&gt; 66 21 44 01 66 21 44 01 66 21 44 01 66 <span style='background:aqua'>21
+29 21    f!D.f!D.f!D.f!)!  7,7,6,7</span></span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:aqua'>11:57:10.736 -&gt; 07 07 06 07 80 01</span><span
+style='font-size:10.5pt;font-family:Consolas'> 21 44 01 66 21 44 01 66 21 44   
+......!D.f!D.f!D</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:11.187
+-&gt; 01 66 21 44 01 66 21 44 01 66 21 44 01 66 <span style='background:lime'>21
+25    .f!D.f!D.f!D.f!%</span></span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas;
+background:lime'>11:57:12.326 -&gt; 21 81 E8</span><span style='font-size:10.5pt;
+font-family:Consolas'> 21 44 01 66 21 44 01 66 21 44 01 66 21   
+!..!D.f!D.f!D.f!  81 reset</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:12.804
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:13.249
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:14.279
+-&gt; 44 21 86 21 44 01 66 21 44 01 66 21 44 01 66 21    D!.!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:14.695
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:15.117
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:15.532
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:15.982
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:16.395
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:16.844
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:17.253
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:17.667
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:18.118
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:18.493
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:18.941
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:19.354
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:19.797
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:20.211
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:20.658
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:21.108
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:21.516
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:21.961
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:22.411
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:23.377
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:23.726
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:24.136
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:24.513
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:24.896
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:25.280
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:26.247
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:27.343
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:27.756
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:28.170
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:28.618
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:29.030
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:29.450
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:29.871
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:30.316
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:30.764
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:31.177
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:31.591
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:32.004
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:32.448
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:32.861
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;font-family:Consolas'>11:57:33.275
+-&gt; 44 01 66 21 44 01 66 21 44 01 66 21 44 01 66 21    D.f!D.f!D.f!D.f!</span></p>
+
+</div>
+
+</body>
+
+</html>
