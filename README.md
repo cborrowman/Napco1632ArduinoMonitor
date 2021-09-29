@@ -24,4 +24,4 @@ Use to analyze data from RX and TX to keyboard from Napco 1632 panel. I used Ard
 
 Arduino Sketch: https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/SerialPassthrough.ino
 
-Word Document with some receive and send data groupings highlighted: https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/alarm%20rx%20tx.docx
+
