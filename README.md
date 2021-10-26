@@ -10,9 +10,11 @@ This interface board (shown below) uses an Arduino MKR 1010 WIFI and 2 optoisola
 
 Below is the schematic I'm using currently. I built this on to a breadboard and used a couple ribbon cables to connect to the keypad.
 
+(https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/Napco%20Intercept%20Module%20using%20Sparkfun%20Optoisolator%20Schematic.png)
+
 Below is an example of the signals showing transmission to the panel at the top in purple and data from the panel on the bottom in yellow. 
 
-
+(https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/Napco%20Alarm%20RX%20TX.png)
 
 ------------------------------------------------------------------------------
 September 29, 2021
