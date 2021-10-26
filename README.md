@@ -1,4 +1,24 @@
 # Napco1632ArduinoMonitor
+
+------------------------------------------------------------------------------
+October 26, 2021
+
+This is my current state. I've built an interface board to go between the napco keypad and the alarm panel
+that can intercept keyboard commands, forward them to the panel or send alternate commands to the panel, and finally monitor requests from the panel.
+
+This interface board (shown below) uses an Arduino MKR 1010 WIFI and 2 optoisolator boards from Sparkfun (https://www.sparkfun.com/products/9118). I had many previous versions both isolated and non-isolated. The first iteration is at the bottom of this description. My next attempts included isolation using with some 4N35s. This worked but wasn't great. I tried one of the Sparkfun isolator boards and it had much better resulting signals. When they sent me an extra one by mistake I decided to go fully isolated in both directions. This took a little more circuitry and a couple transistors before I could reliably drive the transmission line to the panel.
+
+Below is the schematic I'm using currently. I built this on to a breadboard and used a couple ribbon cables to connect to the keypad.
+
+Below is an example of the signals showing transmission to the panel at the top in purple and data from the panel on the bottom in yellow. 
+
+
+
+------------------------------------------------------------------------------
+September 29, 2021
+
+This was my initial attempt at monitoring communications frmo the Napco panel.
+
 Arduino Sketch to monitor serial communications from Napco 1632 Panel to keypad
 
 This effort was inspired by: https://www.wizzycom.net/napco-1632-virtual-keypad-project
