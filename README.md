@@ -8,8 +8,11 @@ that can intercept keyboard commands, forward them to the panel or send alternat
 
 This interface board uses an Arduino MKR 1010 WIFI and 2 optoisolator boards from Sparkfun (https://www.sparkfun.com/products/9118). I had many previous versions both isolated and non-isolated. The first iteration is at the bottom of this description. My next attempts included isolation using with some 4N35s. This worked but wasn't great. I tried one of the Sparkfun isolator boards and it had much better resulting signals. When they sent me an extra one by mistake I decided to go fully isolated in both directions. This took a little more circuitry and a couple transistors before I could reliably drive the transmission line to the panel.
 
+Below is the interface board prototype
+![Prototype](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/prototype.jpeg
+
 Below is the interface board breadboard
-![Breadboard]()
+![Breadboard](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/breadboard.jpeg
 
 Below is the schematic I'm using currently. I built this on to a breadboard and used a couple ribbon cables to connect to the keypad.
 ![Schematic](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/Napco%20Intercept%20Module%20using%20Sparkfun%20Optoisolator%20Schematic.png)
