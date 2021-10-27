@@ -4,7 +4,7 @@
 October 26, 2021
 
 This is my current state. I've built an interface board to go between the napco keypad and the alarm panel
-that can intercept keyboard commands, forward them to the panel or send alternate commands to the panel, and finally monitor requests from the panel. This doesn't require programming an extra keypad, it can plug into an existing keypad.
+that can intercept keyboard commands, forward them to the panel or send alternate commands to the panel, and finally monitor requests from the panel. This doesn't require programming an extra keypad; it can plug into an existing keypad.
 
 Below is a diagram of the intercept concept
 ![Intercept](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/KeypadIntercept.png)
@@ -28,7 +28,7 @@ Below is an example of the signals showing transmission to the panel at the top 
 
 I'm currenty working on software for both the Arduino as well as some cloud services to receive updates and dispatch alarm notifications.
 
-More details to follow.
+More details to follow...
 
 ------------------------------------------------------------------------------
 September 29, 2021
@@ -63,4 +63,4 @@ Arduino Sketch: https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/
 
 
 ------------------------------------------------------------------------------
-Nothing presented here is guaranteed in any way nor do I intend to imply this could become a reliable life-safety monitoring device. All information provided is for entertainment purposes and you should use at your own risk.
+All information provided is for entertainment purposes only and you should use at your own risk. Nothing presented here is intended to suggest this could become a reliable life-safety monitoring device. 
