@@ -4,15 +4,17 @@
 October 26, 2021
 
 This is my current state. I've built an interface board to go between the napco keypad and the alarm panel
-that can intercept keyboard commands, forward them to the panel or send alternate commands to the panel, and finally monitor requests from the panel.
+that can intercept keyboard commands, forward them to the panel or send alternate commands to the panel, and finally monitor requests from the panel. This doesn't require programming an extra keypad, it can plug into an existing keypad.
 
-This interface board uses an Arduino MKR 1010 WIFI and 2 optoisolator boards from Sparkfun (https://www.sparkfun.com/products/9118). I had many previous versions both isolated and non-isolated. The first iteration is at the bottom of this description. My next attempts included isolation using with some 4N35s. This worked but wasn't great. I tried one of the Sparkfun isolator boards and it had much better resulting signals. When they sent me an extra one by mistake I decided to go fully isolated in both directions. This took a little more circuitry and a couple transistors before I could reliably drive the transmission line to the panel.
+This interface board uses an Arduino MKR 1010 WIFI and 2 optoisolator boards from Sparkfun (https://www.sparkfun.com/products/9118). 
+
+I had many previous versions both isolated and non-isolated. The first iteration is at the bottom of this description. My next attempts included isolation using with some 4N35s. This worked but wasn't great. I tried one of the Sparkfun isolator boards and it had much better resulting signals. When they sent me an extra one by mistake I decided to go fully isolated in both directions. You can also get chinese versions of this board for less than $1. It took a little more circuitry and a couple transistors and resistors before I could reliably drive the transmission line to the panel. 
 
 Below is the interface board prototype
-![Prototype](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/prototype.jpeg
+![Prototype](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/prototype.jpeg)
 
 Below is the interface board breadboard
-![Breadboard](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/breadboard.jpeg
+![Breadboard](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/breadboard.jpeg)
 
 Below is the schematic I'm using currently. I built this on to a breadboard and used a couple ribbon cables to connect to the keypad.
 ![Schematic](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/Napco%20Intercept%20Module%20using%20Sparkfun%20Optoisolator%20Schematic.png)
@@ -20,6 +22,8 @@ Below is the schematic I'm using currently. I built this on to a breadboard and 
 Below is an example of the signals showing transmission to the panel at the top in purple and data from the panel on the bottom in yellow. 
 
 ![Oscilliscope](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/Napco%20Alarm%20RX%20TX.png)
+
+More details later...
 
 ------------------------------------------------------------------------------
 September 29, 2021
