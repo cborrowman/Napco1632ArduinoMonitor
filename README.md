@@ -26,7 +26,9 @@ Below is an example of the signals showing transmission to the panel at the top 
 
 ![Oscilliscope](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/Napco%20Alarm%20RX%20TX.png)
 
-More details later...
+I'm currenty working on software for both the Arduino as well as some cloud services to receive updates and dispatch alarm notifications.
+
+More details to follow.
 
 ------------------------------------------------------------------------------
 September 29, 2021
