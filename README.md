@@ -61,3 +61,6 @@ Use to analyze data from RX and TX to keyboard from Napco 1632 panel. I used Ard
 Arduino Sketch: https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/SerialPassthrough.ino
 
 
+
+------------------------------------------------------------------------------
+Nothing presented here is guaranteed in any way nor do I intend to imply this could become a reliable life-safety monitoring device. All information provided is for entertainment purposes and you should use at your own risk.
