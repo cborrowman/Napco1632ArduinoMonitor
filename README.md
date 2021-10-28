@@ -23,8 +23,9 @@ Below is the schematic I'm using currently. I built this on to a breadboard and 
 ![Schematic](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/Napco%20Intercept%20Module%20using%20Sparkfun%20Optoisolator%20Schematic.png)
 
 Below is an example of the signals showing transmission to the panel at the top in purple and data from the panel on the bottom in yellow. 
-
 ![Oscilliscope](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/Napco%20Alarm%20RX%20TX.png)
+
+The yellow line shows data coming from the panel. Requests are identified for each keypad. The keypad will respond to requests identified for the keypad. With the intercept setup, messages from the keypad go through the arduino and are normally just forwarded to the transmit line. If we want to send a message on behalf of a specific keypad, that can be done by sending our own message instead of the one sent by the keypad. 
 
 I'm currenty working on software for both the Arduino as well as some cloud services to receive updates and dispatch alarm notifications.
 
