@@ -65,3 +65,5 @@ Arduino Sketch: https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/
 
 ------------------------------------------------------------------------------
 All information provided is for entertainment purposes only and you should use at your own risk. Nothing presented here is intended to suggest this could become a reliable life-safety monitoring device. 
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fcborrowman%2FNapco1632ArduinoMonitor&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
