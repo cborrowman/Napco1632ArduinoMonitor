@@ -3,7 +3,10 @@
 ------------------------------------------------------------------------------
 December 22, 2021
 
-I wanted to get my prototype into testing and see how reliable it was, but I was reluctant to hook it up to my live alarm panel. Since it depends on intercepting panel messages and resending them on the bus, it seems like any issues could interrupt normal operation and at the very least cause errors. And alarm errors ocurring at 3AM would not be much fun. So I thought about building a new prototype that worked in listen only mode on the alarm bus. This way there wouldn't be any chance it interfers with normal alarm operation. I modified my design a bit to intercept only, see below:
+I wanted to get my prototype into testing and see how reliable it was, but I was reluctant to hook it up to my live alarm panel. Since it depends on intercepting panel messages and resending them on the bus, it seems like any issues could interrupt normal operation and at the very least cause errors. And alarm errors ocurring at 3AM would not be much fun. 
+
+So I thought about building a new prototype that worked in listen only mode on the alarm bus. This way there wouldn't be any chance it interfers with normal alarm operation. I modified my design a bit to intercept only, see below:
+
 ![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/prototype2schematic.png)
 
 And built a prototype:
