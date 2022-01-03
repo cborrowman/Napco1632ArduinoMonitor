@@ -1,6 +1,18 @@
 # Napco1632ArduinoMonitor
 
 ------------------------------------------------------------------------------
+December 22, 2021
+
+I wanted to get my prototype into testing and see how reliable it was, but I was reluctant to hook it up to my live alarm panel. Since it depends on intercepting panel messages and resending them on the bus, it seems like any issues could interrupt normal operation and at the very least cause errors. And alarm errors ocurring at 3AM would not be much fun. So I thought about building a new prototype that worked in listen only mode on the alarm bus. This way there wouldn't be any chance it interfers with normal alarm operation. I modified my design a bit to intercept only, see below:
+
+And built a prototype:
+
+I've had this running for a week or so on my test panel with no issues. I was curious how the voltage regulator would work out to power the arduino. So far no problems. When working with my first prototype I actually ordered and experimented with 2 different isolated voltage regulators (RECOM RM-1205S/H and Murata NMA2405S) which were supposed to be able to convert the 12v from the panel to 5v for arduino.  I had no luck with either of these. I assume I'm doing something wrong, but they either output more than 5v (like 6-7v) which might fry the arduino, or they output practically nothing. I went back to the non-isolated 7805 for this attempt.
+
+This prototype came together quickly and I soon had it monitoring the alarm bus. This allowed me to work on the server side components, an azure website that would record the alarm events and dispatch messages or alarms if detected. 
+
+
+------------------------------------------------------------------------------
 October 26, 2021
 
 This is my current state. I've built an interface board to go between the napco keypad and the alarm panel
