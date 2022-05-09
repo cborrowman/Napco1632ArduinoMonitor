@@ -1,6 +1,24 @@
 # Napco1632ArduinoMonitor
 
 ------------------------------------------------------------------------------
+May 8, 2022
+
+I've been running the monitoring prototype for about 4 months connected to my live alarm system. Initially I had to make a few adjustments to the code to handle repeated Wifi disconnects. Not exactly sure of the cause, since Wifi environment is pretty stable, but some reconnect code seemed to allow it to cover quickly.  
+
+I have Ardino reporting all alarm panel messages to an application running in Azure which collects data to a SQLite database and allows me to review data. 
+
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/alarm%20website.png)
+
+It reports status every 5 minutes even if there are no changes. Timer functions in Azure can detect if panel hasn't reported in and will send Device Offline notice to me. I don't have it connected to a dispatch API yet, but that is about all that is left to complete in the monitoring site. Below is an overview of the architecture:
+
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/system%20architecture.png)
+
+I'm thinking about building another prototype as I really would like to be able to interact with the alarm panel remotely. Mainly to be able to disable prior to entering the house so as to avoid waking everyone up after early morning outing.
+
+I've been experimenting with a new device from SparcFun which makes the interface to the alarm panel less complex. I will continue testing this device and will post updates shortly when I have it running against the live panel.
+
+
+------------------------------------------------------------------------------
 December 22, 2021
 
 I wanted to get my prototype into testing and see how reliable it was, but I was reluctant to hook it up to my live alarm panel. Since it depends on intercepting panel messages and resending them on the bus, it seems like any issues could interrupt normal operation and at the very least cause errors. And alarm errors ocurring at 3AM would not be much fun. 
