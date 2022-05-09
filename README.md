@@ -15,7 +15,11 @@ It reports status every 5 minutes even if there are no changes. Timer functions 
 
 I'm thinking about building another prototype as I really would like to be able to interact with the alarm panel remotely. Mainly to be able to disable prior to entering the house so as to avoid waking everyone up after early morning outing.
 
-I've been experimenting with a new device from SparcFun which makes the interface to the alarm panel less complex. I will continue testing this device and will post updates shortly when I have it running against the live panel.
+I've been experimenting with a different device from SparcFun which makes the interface to the alarm panel less complex. SparkFun Logic Level Converter - Bi-Directional approx $3.50 each (https://www.sparkfun.com/products/12009)
+
+I will continue testing this device and will post updates shortly when I have it running against the live panel.
+
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/SparkFun%20LTwo%20RX.png)
 
 
 ------------------------------------------------------------------------------
