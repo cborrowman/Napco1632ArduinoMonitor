@@ -21,6 +21,7 @@ I will continue testing this device and will post updates shortly when I have it
 
 ![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/SparkFun%20LTwo%20RX.png)
 
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/SDS00007.png)
 
 ------------------------------------------------------------------------------
 December 22, 2021
