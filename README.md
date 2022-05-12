@@ -48,7 +48,7 @@ This is my current state. I've built an interface board to go between the napco 
 that can intercept keyboard commands, forward them to the panel or send alternate commands to the panel, and finally monitor requests from the panel. This doesn't require programming an extra keypad; it can plug into an existing keypad.
 
 Below is a diagram of the intercept concept
-![Intercept](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/KeypadIntercept.png)
+![Intercept](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/Intercept%20Diagram.png)
 
 This interface board uses an Arduino MKR 1010 WIFI and 2 optoisolator boards from Sparkfun (https://www.sparkfun.com/products/9118). This Arduino model can program digital pins to be additional serial port, so I have two receive and one send.
 
