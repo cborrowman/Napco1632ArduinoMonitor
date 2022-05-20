@@ -129,7 +129,7 @@ Use to analyze data from RX and TX to keyboard from Napco 1632 panel. I used Ard
                                  |
                         ARDUINO PIN 13 -> RX
 
-Arduino Sketch: https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/SerialPassthrough.ino
+Arduino Sketch: https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/ino/SerialPassthrough.ino
 
 
 
