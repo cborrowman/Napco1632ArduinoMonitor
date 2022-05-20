@@ -1,6 +1,35 @@
 # Napco1632ArduinoMonitor
 
 ------------------------------------------------------------------------------
+May 19, 2022
+
+I had to rework the two way prototype as it didn't seem to reliably be able to send the keypad commands on the bus. The level converter seemed to work fine on the breadboard, but it appears it just couldn't push the output hard enough.
+
+Below is a good send, which is coming from the other non-conncted keypad. It shows 12.6 volts.
+
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/good%20send.png)
+
+Below is a bad send, coming from the level converter. Notice the voltage here is only 9.8 volts. I believe this was the cause - it wasn't driving the output enough to be reliably recognized. Even the scope could not decode the signal.
+
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/bad%20send.png)
+
+Below shows both the data from the panel and the transmission bus. Both keypads output can be seen here. The longer yellow transmission line is now from the intercepted panel with the transistor driver. The shorter one is a from the second non-intercepted panel. Both signals can now be decoded both by the scope and by the panel.
+
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/sends.png)
+
+I ended up adding a darlington transistor pair on the output which seems to fix the drive problem. Now the intercepted panel commands seem to send even better then the second panel.
+
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/with%20trans%20output.png)
+
+Here's the new schematic:
+
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/SparkFunLevelWithOutputTrans.png)
+
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/prototype3.jpeg)
+
+This has run for 24 hours without error so it looks like it is time to work on the software for the intercepted version. I'm planning on having the arduino listen for HTTP server requests and return a simple webpage that will allow interaction with the panel, for example sending arm/diarm codes, reset, etc.
+
+------------------------------------------------------------------------------
 May 8, 2022
 
 I've been running the monitoring prototype for about 4 months connected to my live alarm system. Initially I had to make a few adjustments to the code to handle repeated Wifi disconnects. Not exactly sure of the cause, since Wifi environment is pretty stable, but some reconnect code seemed to allow it to cover quickly.  
