@@ -5,6 +5,10 @@ May 19, 2022
 
 I had to rework the two way prototype as it didn't seem to reliably be able to send the keypad commands on the bus. The level converter seemed to work fine on the breadboard, but it appears it just couldn't push the output hard enough.
 
+Below shows both the data from the panel and the transmission bus on the bottom. Both keypads output can be seen here. The longer yellow transmission line is second non-intercepted panel and the shorter is the the intercepted panel with the transistor driver. Notice the scope can only decode the non-intercepted panel.
+
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/sends.png)
+
 Below is a good send, which is coming from the other non-conncted keypad. It shows 12.6 volts.
 
 ![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/good%20send.png)
@@ -13,11 +17,7 @@ Below is a bad send, coming from the level converter. Notice the voltage here is
 
 ![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/bad%20send.png)
 
-Below shows both the data from the panel and the transmission bus. Both keypads output can be seen here. The longer yellow transmission line is now from the intercepted panel with the transistor driver. The shorter one is a from the second non-intercepted panel. Both signals can now be decoded both by the scope and by the panel.
-
-![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/sends.png)
-
-I ended up adding a darlington transistor pair on the output which seems to fix the drive problem. Now the intercepted panel commands seem to send even better then the second panel.
+I ended up adding a darlington transistor pair on the output which seems to fix the drive problem. Now the intercepted panel command seem to have better strength than the second panel. Both the scope and panel can decode both signals.
 
 ![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/with%20trans%20output.png)
 
