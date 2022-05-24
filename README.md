@@ -1,4 +1,39 @@
 # Napco1632ArduinoMonitor
+------------------------------------------------------------------------------
+
+May 24, 2022
+
+I was thinking about the last prototype and that it is dependent on having the Arduino reliably send the intercepted keypad commands all the time. Only a few missed message ends up showing a system fault on the alarm.
+
+As I thought about it, 99.9% of the time, I want the keypad messages to go straight through. Only once in a while will I want to send my own custom commands, to arm or disarm, for example. What would be really nice is to have some kind of switch that lets the the keypad commands go through to the panel except in the case that I want to send my own custom command, I could flip the switch, send my command, then restore the switch for normal operation. 
+
+I researched a little and found what looked like a suitable component, a CMOS analog SPDT switch IC from Vishay DG419: https://www.vishay.com/docs/70051/dg417.pdf
+
+Reading about this chip, it seems to provide what I want. It’s a switch that can work in both directions and is controlled by a digital signal. All I need to do to use it is one more digital output on the Arduino to control this switch. 
+
+I ordered a couple of these switches and when they arrived I wired up a breadboard circuit to test it and it seems to work! This lead to a new schematic and prototype #4:
+
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/Sparkfun%20level%20converter%20output%20trans%20with%20switch.png)
+
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/prototype4%20front.jpeg)
+
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/prototype4%20back.jpeg)
+
+I modified the test software I was using that was passing the keypad commands through to the panel. By default the switch is in its normally closed position and keypad commands go directly to the panel bus. I made it so that every 10th response sent by the keypad, will trigger the switch and the Arduino generated message will be sent to the panel bus.
+
+This can be seen below. This image shows the green RX from the panel with the switch control. 
+
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/bus%20green%20rx%20with%20switch%20control.png)
+
+This image shows the TX to the panel with the switch control. You can tell it is sending the Arduino message because it is slightly longer. 
+
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/bus%20yellow%20tx%20with%20switch%20control.png)
+
+I made a combined image below that shows both signals with the switch control. This gives a sense of the overall timing.
+
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/combined%20with%20switch%20control.png)
+
+Now I can clean up the software to send just the custom commands and remove stuff I don't need. This seems like the ideal solution so far.
 
 ------------------------------------------------------------------------------
 May 19, 2022
