@@ -1,5 +1,21 @@
 # Napco1632ArduinoMonitor
 ------------------------------------------------------------------------------
+June 1, 2022
+
+Hit an important milestone today! I can connect to a website that displays the panel buttons virtually. I can enter codes and arm and disarm as needed! Panel responds immediately. Switching hardware is working perfectly.
+
+Here's a couple photos of the website - works on my mac and iphone:
+
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/disarmed.png)
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/armed.png)
+
+Below is a screenshot of the transmit line and the switching signal. At this point I am transmitting a custom command to the panel from the website. For example, to arm or disarm:
+
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/switch%20send%201.png)
+
+Now I can finish up the reporting side of the software and try to connect a dispatch API.
+
+------------------------------------------------------------------------------
 
 May 24, 2022
 
