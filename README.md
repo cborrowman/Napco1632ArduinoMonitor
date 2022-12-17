@@ -1,5 +1,20 @@
 # Napco1632ArduinoMonitor
 ------------------------------------------------------------------------------
+December 17, 2022
+
+I've been experimenting with ethernet adaptors trying to find a reliable wired ethernet connection. I tried replacing the 7805 power supply with an OKI 78SR5 power convertor. This uses solid state switching to regulate power and won't have the same power usage as the 7805. I thought the 7805 was getting rather hot. I seem to have a problem with bootup power. I ended up just using a USB power supply for the Arduino & ethernet.
+
+This lead to Schematic 5 and Prototype 5 shown below:
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/Schematic5.png)
+<br/>
+![Prototype2](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/Prototype5.jpg)
+
+I had added two LEDs to show a heatbeat blink and a post light. This provided some feedback that the unit was operating. I didn't realize at first that I had a conflict between the Arduino and the ETH shield. I had an LED wired to digital pins 4 & 5. The MKR ETH shield was using pi 4 as CS for the card reader.
+
+I think this was the source of some of my problems. I had code turning the LED on and off and this was likely causing CS signal conflicts.
+
+
+------------------------------------------------------------------------------
 November 6, 2022
 
 The alarm monitor has been running for several months using WIFI to communicate with the server site. Once I added a routine to reset and restart the WIFI module when it cannot connect, it’s been reliable. 
