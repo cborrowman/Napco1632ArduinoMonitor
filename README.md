@@ -1,5 +1,30 @@
 # Napco1632ArduinoMonitor
 ------------------------------------------------------------------------------
+November 6, 2022
+
+The alarm monitor has been running for several months using WIFI to communicate with the server site. Once I added a routine to reset and restart the WIFI module when it cannot connect, it’s been reliable. 
+
+It reports status every 5 minutes if there is no other status to send, so the server will detect if the alarm is offline if it doesn’t hear anything for 6 minutes. I was getting offline reports once or twice a day, but it would always be back online within 1-2 minutes. I’m not sure of the cause of this. It could be WIFI connection, although I’ve got a Google mesh network that seems very reliable. 
+
+It could be a bug that prevents it from sending on time. Monitoring the log for extended periods of time I was surprised to see how much time it was taking to send a message via SSL.
+
+WIFI message sends over SSL were taking 3+ seconds, which seems like a very long time. I measured a few that took 4-7 seconds. I had to set the watchdog timer to 8 seconds to avoid resetting the monitor if the send takes too long. I don’t think this was the cause of going offline because the monitor sends a power on message when it boots and there was no log of this.
+
+I figured I would switch to wired ethernet since i already had a network line run to the panel. I purchased an Arduino MKR ETH Shield which plugged directly into the Arduino MKR WIFI 1010 I am using. I thought this would be a simple change to the code. 
+
+Although the MKR WIFI 1010 has a special ship to hold certificate secrets, I didn’t find any libraries which could use this for Ethernet. I did eventually find a library that could handle SSL over ethernet. These messages were taking over 7 seconds to make the SSL connection! I’m surprised at the state of SSL. it seems current SSL encryption requires too much computation. Regular HTTP is pretty quick, usually less than one second. 
+
+I considered just using HTTP, however the Azure Static Web Site doesn’t accept HTTP connections. I started experimenting with doing some lightweight encryption on the Arduino and found a library that could do AES 128 quickly. This would be good enough for alarm status data. I created an Azure function that accepted an encrypted POST from the Arduino on HTTP and would decrypt and forward to the normal status API.
+
+This allowed posts to occur under one second, typically around 600ms including the encryption. This was good enough.
+
+I plugged in the ethernet shield to the live monitor and updated the software. It was working for for about one hour when it went offline. It didn’t come back online like before. I connected the computer to view the log output and it booted up and started running. I suspect the 7805 voltage regulator powering the Arduino just could not handle both the Arduino and ethernet shield. It got too hot and shutdown.
+
+I plugged in a USB power supply to the usb cable to take the load off the voltage regulator. It ran for about one day and then stopped, and again the Arduino appeared to be hung since it booted when I connected the mac. 
+ 
+I put the WIFI code back in place and proceeded to investigate power and ethernet options.
+
+------------------------------------------------------------------------------
 June 1, 2022
 
 Hit an important milestone today! I can connect to a website that displays the panel buttons virtually. I can enter codes and arm and disarm as needed! Panel responds immediately. Switching hardware is working perfectly.
