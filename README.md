@@ -1,5 +1,20 @@
 # Napco1632ArduinoMonitor
 ------------------------------------------------------------------------------
+April 21, 2023
+
+One day I was looking at other integrated alarm ideas and came across one solution that used keyswitch arming to trigger arming and disarming of the control panel. I wish I had found this earlier because it makes for a much simplier solution. Rather than trying to intercept a panel, be abel to read and write to the panel and also and inject my own commands in bewteen responses from a real keypad, all it has to do is monitor the panel output. Then to trigger arm/disarm it only needs to ground two pins on the panel.
+
+I had an earlier prototype board sitting on the bench that was readonly. I experimented with using a simple transistor to pull the keyswitch contacts low it worked, so I turned this board into Schematic 6 and Prototype 6.
+
+All the code I had previouslt could be used, except I didn't need any of the code to write commands back. Triggering the keyswitch just required a one second pulse to low on the digital output driving the transistor.
+
+The last prototype has been very stable and has been running since December. I do seem to go through episodes of rebooting a few times a day, some days more than others. I think the issues are more about sending commands to the azure site recording alarm status. I think the reboots are ocurring because the command cannot be delivered to the azure site within 8 seconds. I don't think it is because the board is crashing and rebooting. I have an 8 second watch dog running, so if any command takes longer than 8 seconds, the board resets. I see 2 or 3 a day.
+
+![Prototype6](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/Schematic6.png)
+<br/>
+![Prototype6](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/Prototype6.jpg)
+
+------------------------------------------------------------------------------
 December 17, 2022
 
 I've been experimenting with ethernet adaptors trying to find a reliable wired ethernet connection. I tried replacing the 7805 power supply with an OKI 78SR5 power convertor. This uses solid state switching to regulate power and won't have the same power usage as the 7805. I thought the 7805 was getting rather hot. I seem to have a problem with bootup power. I ended up just using a USB power supply for the Arduino & ethernet.
