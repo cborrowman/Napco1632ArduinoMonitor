@@ -10,7 +10,7 @@ All the code I had previouslt could be used, except I didn't need any of the cod
 
 The last prototype has been very stable and has been running since December. I do seem to go through episodes of rebooting a few times a day, some days more than others. I think the issues are more about sending commands to the azure site recording alarm status. I think the reboots are ocurring because the command cannot be delivered to the azure site within 8 seconds. I don't think it is because the board is crashing and rebooting. I have an 8 second watch dog running, so if any command takes longer than 8 seconds, the board resets. I see 2 or 3 a day.
 
-![Prototype6](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/Schematic6.png)
+![Prototype6](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/schematic6.png)
 
 ------------------------------------------------------------------------------
 December 17, 2022
