@@ -1,5 +1,34 @@
 # Napco1632ArduinoMonitor
 ------------------------------------------------------------------------------
+April 24, 2026
+
+I've been running the Arduino MKR 1010 WIFI/Arduino MKR Ethernet combo for a couple years now and it's been fairly reliable. It does restart occasionally, which I think is due to the 8 second watchdog timer expiring due to some delay posting to the azure site I am collecting data. 
+
+I don't use HTTPS because the handshakes were taking 7-8 seconds and require preloading a certificate trust chain that I would have to flash to maintain over time. You need to use encryption, so I found it to be much faster to encrypt data on the arduino using a hardcoded key and send the encrypted data over HTTP rather than attempting to do TLS directly on the Arduino. I'm willing to accept the risk of this for a hobbyist solution.
+
+I wanted to have a cellular fallback and have spent time exploring options to do that. I looked at the [SparkFun LTE CAT M1/NB-IoT Shield - SARA-R4](https://www.sparkfun.com/sparkfun-lte-cat-m1-nb-iot-shield-sara-r4.html) although I never had much success with it. I could get a few connections and send a little data, but would also go through days of total failure. It never became a reliable option.
+
+I also tried the [Arduino MKR NB 1500](https://store-usa.arduino.cc/products/arduino-mkr-nb-1500) cellular option and had similar results as the SparkFun. It worked occasionally but it then seems like a total failure. I think I even replaced the Arduino board at one point but never made much headway.
+
+I recently came across the [Walter](https://www.quickspot.io/) cellular modem device. An ESP32 based board with WIFI and LTE. It worked right out of the box. I experimented with it for a couple months. Its software library was upgraded a few times and seems like a stable platform.
+
+The idea occurred to me to build a cellular proxy device using the WalterModem. I would add a LAN connection and any devices in my house could send their payload to this device over LAN, it would attempt to repost the request via LAN, if that fails it would try WIFI, and if that fails it would fallback to Cellular/LTE. I spent a few months building and testing this. Looking at the entire picture, I grew dissatisfied with the proxy plan. It meant I'd have to provide battery backup power to all devices that need to send data, and likely some portion of the network, at least one router, in case of a power outage. While this could work, it seemed impractical and cumbersome.
+
+I had a fairly complicated script for Arduino and the thought of rewriting it for ESP32 didn't sound like fun, so I initially did not consider porting my alarm monitor implementation to run on the Walter. I started experimenting with a W5500 LAN controller and once I got that working it seemed pretty straightforward to see if the Walter could handle the other IO needed for the alarm monitor.
+
+The hardware interface was nearly identical to what I used on Arduino. Copilot with Claude Sonnet made the migration to Walter effortless. I started by having it create a detailed plan and it actually suggested several additions I had not considered, such as recording reboot reason and other diagnostic information. I also had it implement a number of test modes so I could confirm each of the transport platforms was working.
+
+![Walter With Fallback Schematic](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/WalterW5500KeyswitchWithLTEFallback.png)
+
+![Walter With Fallback Photo](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/WalterW5500Fallback.jpg)
+
+It took a little effort getting the transport fallback to work correctly. Fortunately I had a home internet outage at just the right time and was able to test. Of course the first tests failed but with a little work I ended up with a reliable fallback scheme. It tries to publish to the server first via LAN, if that is disconnected or fails, it will try WIFI. If that isn't online or fails it will then try cellular LTE. Worst case is about 6 seconds failing on LAN and WIFI. Running this for a couple weeks I still see some fail overs to cellular throughout the day.
+
+I'm using a sim from [Hologram](https://www.hologram.io/). Minimal data usage is about $1 per month.
+
+I really like the Walter and am thinking of other uses where I'd like to fallback to cell communication.
+
+------------------------------------------------------------------------------
 April 21, 2023
 
 One day I was looking at other integrated alarm ideas and came across one solution that used keyswitch arming to trigger arming and disarming of the control panel. I wish I had found this earlier because it makes for a much simplier solution. Rather than having to read and write to the panel and also and inject my own commands in bewteen responses from a real keypad, all it has to do is monitor the panel output. Then to trigger arm/disarm it only needs to ground two pins on the panel.
