@@ -18,7 +18,7 @@ I had a fairly complicated script for Arduino and the thought of rewriting it fo
 
 The hardware interface was nearly identical to what I used on Arduino. Copilot with Claude Sonnet made the migration to Walter effortless. I started by having it create a detailed plan and it actually suggested several additions I had not considered, such as recording reboot reason and other diagnostic information. I also had it implement a number of test modes so I could confirm each of the transport platforms was working.
 
-![Walter With Fallback Schematic](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/WalterW5500KeyswitchWithLTEFallback.png)
+![Walter With Fallback Schematic](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/WalterW5500KeyswitchWithLTEFallback.jpg)
 
 ![Walter With Fallback Photo](https://github.com/cborrowman/Napco1632ArduinoMonitor/blob/main/images/WalterW5500Fallback.jpg)
 
